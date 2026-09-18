@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
+      data-i18n="meta.description"
       content="João Pedro Pequeno da Silva — Desenvolvedor Front-end com foco em Vue 3, TypeScript e Tailwind CSS."
     />
-    <title>João Pedro Pequeno | Front-end Developer</title>
+    <title data-i18n="meta.title">João Pedro Pequeno | Front-end Developer</title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,6 +26,10 @@
     />
   </head>
   <body class="main-content">
+    <div class="lang-switch" role="group" aria-label="Idioma / Language">
+      <button type="button" data-lang="pt" class="lang-active">pt</button>
+      <button type="button" data-lang="en">en</button>
+    </div>
     <header class="container header active" id="home">
       <div class="header-content">
         <div class="left-header">
@@ -38,8 +43,9 @@
         </div>
         <div class="right-header">
           <h1 class="name">
-            Eu sou <span>João Pedro Pequeno da Silva</span>
-            Front-end | Vue.js | TypeScript | Consumo de APIs REST
+            <span data-i18n="hero.iam">Eu sou</span>
+            <span>João Pedro Pequeno da Silva</span>
+            <span data-i18n="hero.role">Front-end | Vue.js | TypeScript | Consumo de APIs REST</span>
           </h1>
         </div>
       </div>
@@ -47,26 +53,32 @@
     <main>
       <section class="container about" id="about">
         <div class="main-title">
-          <h2>About <span>me</span><span class="bg-text">Sobre mim</span></h2>
+          <h2>
+            <span data-i18n="about.titleA">About</span>
+            <span data-i18n="about.titleB">me</span>
+            <span class="bg-text" data-i18n="about.titleBg">Sobre mim</span>
+          </h2>
         </div>
         <div class="about-container">
           <div class="left-about">
-            <h4>Informações Sobre mim</h4>
-            <p>
+            <h4 data-i18n="about.subtitle">Informações Sobre mim</h4>
+            <p data-i18n="about.p1">
               Desenvolvedor Front-end com foco em Vue 3, TypeScript e Tailwind
               CSS. Faço parte da equipe de tecnologia da Amigos do Bem,
               instituição que atua no combate à fome e à miséria no sertão
               nordestino. Meu trabalho é construir os sistemas internos que
               sustentam essa operação: uma plataforma de gestão de projetos
               sociais, um ERP para a área de empreendedorismo e um help desk
-              usado pelas unidades para abrir e acompanhar chamados.<br />
-              <br />
+              usado pelas unidades para abrir e acompanhar chamados.
+            </p>
+            <p data-i18n="about.p2">
               Esse contexto moldou meu jeito de trabalhar. Quem usa os sistemas
               que eu desenvolvo nem sempre tem familiaridade com tecnologia ou
               uma boa conexão à internet — então cada tela precisa ser simples,
               rápida e óbvia. Interface bonita é consequência; interface que a
-              pessoa consegue usar sozinha, no primeiro dia, é o objetivo.<br />
-              <br />
+              pessoa consegue usar sozinha, no primeiro dia, é o objetivo.
+            </p>
+            <p data-i18n="about.p3">
               No dia a dia trabalho com Vue 3, TypeScript, Tailwind CSS e
               consumo de APIs REST. Tenho também boa base em Laravel e
               PostgreSQL, o que me permite entender o sistema de ponta a ponta e
@@ -74,40 +86,37 @@
               que está minha especialidade e o foco da minha carreira. Estou
               cursando Análise e Desenvolvimento de Sistemas e sigo estudando o
               que aparece pela frente: arquitetura de componentes, performance,
-              acessibilidade e boas práticas de código.<br />
-              <br />
+              acessibilidade e boas práticas de código.
             </p>
           </div>
           <div class="right-about">
-            <div class="about-item">
+            <div class="about-item reveal" style="--reveal-delay: 0">
               <div class="abt-text">
                 <p class="large-text">3</p>
-                <p class="small-text">
-                  Sistemas em <br />
-                  Produção
+                <p class="small-text" data-i18n="stats.systems">
+                  Sistemas em Produção
                 </p>
               </div>
             </div>
-            <div class="about-item">
+            <div class="about-item reveal" style="--reveal-delay: 1">
               <div class="abt-text">
                 <p class="large-text">4+</p>
-                <p class="small-text">
-                  Anos de <br />
-                  Experiência
+                <p class="small-text" data-i18n="stats.years">
+                  Anos de Experiência
                 </p>
               </div>
             </div>
           </div>
         </div>
         <div class="about-stats">
-          <h4 class="stat-title">Minhas Habilidades</h4>
+          <h4 class="stat-title" data-i18n="skills.title">Minhas Habilidades</h4>
           <div class="progress-bars">
             <div class="progress-bar">
               <p class="prog-title">Vue 3</p>
               <div class="progress-con">
                 <p class="prog-text">90%</p>
                 <div class="progress">
-                  <span style="width: 90%"></span>
+                  <span class="bar-fill" style="--bar-width: 90%"></span>
                 </div>
               </div>
             </div>
@@ -116,7 +125,7 @@
               <div class="progress-con">
                 <p class="prog-text">85%</p>
                 <div class="progress">
-                  <span style="width: 85%"></span>
+                  <span class="bar-fill" style="--bar-width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -125,7 +134,7 @@
               <div class="progress-con">
                 <p class="prog-text">85%</p>
                 <div class="progress">
-                  <span style="width: 85%"></span>
+                  <span class="bar-fill" style="--bar-width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -134,7 +143,7 @@
               <div class="progress-con">
                 <p class="prog-text">85%</p>
                 <div class="progress">
-                  <span style="width: 85%"></span>
+                  <span class="bar-fill" style="--bar-width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -143,16 +152,16 @@
               <div class="progress-con">
                 <p class="prog-text">95%</p>
                 <div class="progress">
-                  <span style="width: 95%"></span>
+                  <span class="bar-fill" style="--bar-width: 95%"></span>
                 </div>
               </div>
             </div>
             <div class="progress-bar">
-              <p class="prog-title">Consumo de APIs REST</p>
+              <p class="prog-title" data-i18n="skills.rest">Consumo de APIs REST</p>
               <div class="progress-con">
                 <p class="prog-text">85%</p>
                 <div class="progress">
-                  <span style="width: 85%"></span>
+                  <span class="bar-fill" style="--bar-width: 85%"></span>
                 </div>
               </div>
             </div>
@@ -161,7 +170,7 @@
               <div class="progress-con">
                 <p class="prog-text">80%</p>
                 <div class="progress">
-                  <span style="width: 80%"></span>
+                  <span class="bar-fill" style="--bar-width: 80%"></span>
                 </div>
               </div>
             </div>
@@ -170,114 +179,216 @@
               <div class="progress-con">
                 <p class="prog-text">70%</p>
                 <div class="progress">
-                  <span style="width: 70%"></span>
+                  <span class="bar-fill" style="--bar-width: 70%"></span>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <h4 class="stat-title">Experiência e Formação</h4>
+        <h4 class="stat-title" data-i18n="timeline.title">Experiência e Formação</h4>
         <div class="timeline">
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 0">
             <div class="tl-icon">
               <i class="fas fa-briefcase"></i>
             </div>
-            <p class="tl-duration">jan 2026 - Atualmente</p>
-            <h5>Programador Front-end Júnior<span> - Amigos do Bem</span></h5>
-            <p>
+            <p class="tl-duration" data-i18n="tl.job1.period">jan 2026 - Atualmente</p>
+            <h5>
+              <span data-i18n="tl.job1.role">Programador Front-end Júnior</span
+              ><span> - Amigos do Bem</span>
+            </h5>
+            <p data-i18n="tl.job1.desc">
               Desenvolvimento dos sistemas internos da instituição em Vue 3,
               TypeScript e Tailwind CSS, consumindo APIs REST em Laravel:
               plataforma de gestão de projetos sociais, ERP de empreendedorismo
               e help desk de chamados.
             </p>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 1">
             <div class="tl-icon">
               <i class="fas fa-chalkboard-teacher"></i>
             </div>
-            <p class="tl-duration">ago 2024 - Atualmente</p>
-            <h5>Instrutor<span> - Amigos do Bem</span></h5>
-            <p>
+            <p class="tl-duration" data-i18n="tl.job2.period">ago 2024 - Atualmente</p>
+            <h5>
+              <span data-i18n="tl.job2.role">Instrutor</span
+              ><span> - Amigos do Bem</span>
+            </h5>
+            <p data-i18n="tl.job2.desc">
               Formação em informática e tecnologia para turmas da instituição no
               sertão nordestino.
             </p>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 2">
             <div class="tl-icon">
               <i class="fas fa-laptop-code"></i>
             </div>
-            <p class="tl-duration">mai 2024 - Atualmente</p>
-            <h5>Desenvolvedor Front-end<span> - Autônomo</span></h5>
-            <p>
+            <p class="tl-duration" data-i18n="tl.job3.period">mai 2024 - Atualmente</p>
+            <h5>
+              <span data-i18n="tl.job3.role">Desenvolvedor Front-end</span
+              ><span data-i18n="tl.job3.org"> - Autônomo</span>
+            </h5>
+            <p data-i18n="tl.job3.desc">
               Desenvolvimento de telas para o aplicativo/site ADB-Chamados.
             </p>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 3">
             <div class="tl-icon">
               <i class="fas fa-desktop"></i>
             </div>
-            <p class="tl-duration">fev 2022 - ago 2024</p>
-            <h5>Monitor de laboratório de informática<span> - Amigos do Bem</span></h5>
-            <p>
+            <p class="tl-duration" data-i18n="tl.job4.period">fev 2022 - ago 2024</p>
+            <h5>
+              <span data-i18n="tl.job4.role">Monitor de laboratório de informática</span
+              ><span> - Amigos do Bem</span>
+            </h5>
+            <p data-i18n="tl.job4.desc">
               Suporte ao laboratório de informática e apoio aos alunos no uso
               das ferramentas digitais.
             </p>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 4">
             <div class="tl-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
-            <p class="tl-duration">2023 - Cursando</p>
-            <h5>Análise e Desenvolvimento de Sistemas<span> - Centro Universitário Paraíso, hoje na UNOPAR</span></h5>
-            <p>
+            <p class="tl-duration" data-i18n="tl.edu1.period">2023 - Cursando</p>
+            <h5>
+              <span data-i18n="tl.edu1.role">Análise e Desenvolvimento de Sistemas</span
+              ><span data-i18n="tl.edu1.org"> - Centro Universitário Paraíso, hoje na UNOPAR</span>
+            </h5>
+            <p data-i18n="tl.edu1.desc">
               Graduação iniciada no Centro Universitário Paraíso em 2023 e em
               andamento na UNOPAR.
             </p>
           </div>
-          <div class="timeline-item">
+          <div class="timeline-item reveal" style="--reveal-delay: 5">
             <div class="tl-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
-            <p class="tl-duration">2017 - 2020</p>
-            <h5>Técnico em Informática<span> - EEEP Padre João Bosco de Lima</span></h5>
-            <p>Curso técnico integrado ao ensino médio.</p>
+            <p class="tl-duration" data-i18n="tl.edu2.period">2017 - 2020</p>
+            <h5>
+              <span data-i18n="tl.edu2.role">Técnico em Informática</span
+              ><span> - EEEP Padre João Bosco de Lima</span>
+            </h5>
+            <p data-i18n="tl.edu2.desc">Curso técnico integrado ao ensino médio.</p>
           </div>
         </div>
       </section>
       <section class="container" id="portfolio">
         <div class="main-title">
-          <h2>Meu <span>Portfolio</span><span class="bg-text">Minhas Atividades</span></h2>
+          <h2>
+            <span data-i18n="port.titleA">Meu</span>
+            <span data-i18n="port.titleB">Portfolio</span>
+            <span class="bg-text" data-i18n="port.titleBg">Minhas Atividades</span>
+          </h2>
         </div>
-        <p class="port-text">
-          Sistemas internos da Amigos do Bem — repositórios privados, sem link
-          público.
+        <p class="port-text" data-i18n="port.text">
+          Sistemas internos da Amigos do Bem (repositórios privados) e projetos
+          pessoais com código aberto.
         </p>
         <div class="portfolios">
-          <div class="portfolio-item">
+          <div class="portfolio-item reveal" style="--reveal-delay: 0">
             <div class="image">
               <img src="img/projeto-drm.svg" alt="Plataforma de gestão de projetos sociais" />
             </div>
             <div class="hover-items">
-              <h3>Gestão de Projetos Sociais</h3>
-              <p style="color: var(--color-white); text-align: center; padding: 0 1.5rem">Vue 3 · TypeScript · Tailwind CSS · API REST</p>
+              <h3 data-i18n="port.drm.name">Gestão de Projetos Sociais</h3>
+              <p class="port-stack">Vue 3 · TypeScript · Tailwind CSS · API REST</p>
             </div>
           </div>
-          <div class="portfolio-item">
+          <div class="portfolio-item reveal" style="--reveal-delay: 1">
             <div class="image">
               <img src="img/projeto-erp.svg" alt="ERP de empreendedorismo" />
             </div>
             <div class="hover-items">
-              <h3>ERP de Empreendedorismo</h3>
-              <p style="color: var(--color-white); text-align: center; padding: 0 1.5rem">Vue 3 · TypeScript · Tailwind CSS · Laravel</p>
+              <h3 data-i18n="port.erp.name">ERP de Empreendedorismo</h3>
+              <p class="port-stack">Vue 3 · TypeScript · Tailwind CSS · Laravel</p>
             </div>
           </div>
-          <div class="portfolio-item">
+          <div class="portfolio-item reveal" style="--reveal-delay: 2">
             <div class="image">
               <img src="img/projeto-chamados.svg" alt="Help desk de chamados" />
             </div>
             <div class="hover-items">
-              <h3>Help Desk de Chamados</h3>
-              <p style="color: var(--color-white); text-align: center; padding: 0 1.5rem">Vue 3 · TypeScript · Tailwind CSS · API REST</p>
+              <h3 data-i18n="port.helpdesk.name">Help Desk de Chamados</h3>
+              <p class="port-stack">Vue 3 · TypeScript · Tailwind CSS · API REST</p>
+            </div>
+          </div>
+          <div class="portfolio-item reveal" style="--reveal-delay: 3">
+            <div class="image">
+              <img src="img/projeto-abertura-chamados.svg" alt="Abertura de chamados em Vue" />
+            </div>
+            <div class="hover-items">
+              <h3>Abertura de Chamados</h3>
+              <p class="port-stack">Vue 3 · TypeScript · vee-validate · axios</p>
+              <div class="icons">
+                <a
+                  href="https://github.com/PEDRO2221/abertura-chamados"
+                  target="_blank"
+                  rel="noopener"
+                  class="icon"
+                  aria-label="abertura-chamados no GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item reveal" style="--reveal-delay: 4">
+            <div class="image">
+              <img src="img/projeto-front-login.svg" alt="Front-end de login em Vue" />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="port.login.name">Front-end de Login</h3>
+              <p class="port-stack">Vue 3 · TypeScript · vue-router · vee-validate</p>
+              <div class="icons">
+                <a
+                  href="https://github.com/PEDRO2221/front-login-com-vue"
+                  target="_blank"
+                  rel="noopener"
+                  class="icon"
+                  aria-label="front-login-com-vue no GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item reveal" style="--reveal-delay: 5">
+            <div class="image">
+              <img src="img/projeto-svelte-calculator.svg" alt="Calculadora em Svelte" />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="port.calc.name">Calculadora em Svelte</h3>
+              <p class="port-stack">Svelte · JavaScript</p>
+              <div class="icons">
+                <a
+                  href="https://github.com/PEDRO2221/SvelteCalculator"
+                  target="_blank"
+                  rel="noopener"
+                  class="icon"
+                  aria-label="SvelteCalculator no GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio-item reveal" style="--reveal-delay: 6">
+            <div class="image">
+              <img src="img/projeto-servidor-tcp.svg" alt="Servidor TCP em Python" />
+            </div>
+            <div class="hover-items">
+              <h3 data-i18n="port.tcp.name">Servidor TCP em Python</h3>
+              <p class="port-stack">Python · Sockets · Redes</p>
+              <div class="icons">
+                <a
+                  href="https://github.com/PEDRO2221/servidor-tcp-python"
+                  target="_blank"
+                  rel="noopener"
+                  class="icon"
+                  aria-label="servidor-tcp-python no GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -285,12 +396,16 @@
       <section class="container contact" id="contact">
         <div class="contact-container">
           <div class="main-title">
-            <h2>Entre em  <span>Contato</span><span class="bg-text"></span></h2>
+            <h2>
+              <span data-i18n="contact.titleA">Entre em</span>
+              <span data-i18n="contact.titleB">Contato</span>
+              <span class="bg-text"></span>
+            </h2>
           </div>
           <div class="contact-content-con">
             <div class="left-contact">
-              <h4>Fale agora</h4>
-              <p>
+              <h4 data-i18n="contact.subtitle">Fale agora</h4>
+              <p data-i18n="contact.text">
                 Aberto a trocar ideias sobre front-end, Vue e tecnologia
                 aplicada a impacto social.
               </p>
@@ -298,14 +413,14 @@
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Localização</span>
+                    <span data-i18n="contact.location">Localização</span>
                   </div>
                   <p>: Mauriti, Ceará, Brasil</p>
                 </div>
                 <div class="contact-item">
                   <div class="icon">
                     <i class="fas fa-envelope"></i>
-                    <span>Email</span>
+                    <span data-i18n="contact.email">Email</span>
                   </div>
                   <p>
                     <span>: anonimousdex01@gmail.com</span>
@@ -356,5 +471,7 @@
       </div>
     </div>
     <script src="app.js"></script>
+    <script src="i18n.js"></script>
+    <script src="animations.js"></script>
   </body>
 </html>

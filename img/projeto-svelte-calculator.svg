@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Calculadora em Svelte">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1f2433"/>
+      <stop offset="100%" stop-color="#12181b"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <g stroke="#27ae60" stroke-width="2" fill="none" opacity="0.35">
+    <circle cx="330" cy="70" r="46"/>
+    <circle cx="330" cy="70" r="74"/>
+  </g>
+  <rect x="40" y="96" width="56" height="4" rx="2" fill="#27ae60"/>
+  <text x="40" y="150" fill="#ffffff" font-family="Poppins, Verdana, sans-serif" font-size="27" font-weight="700">Calculadora</text>
+  <text x="40" y="186" fill="#ffffff" font-family="Poppins, Verdana, sans-serif" font-size="27" font-weight="700">em Svelte</text>
+  <text x="40" y="232" fill="#b2becd" font-family="Poppins, Verdana, sans-serif" font-size="15">Svelte · JavaScript</text>
+</svg>
