@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Plataforma de gestao de projetos sociais">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Plataforma de gestao de projetos sociais da Amigos do Bem">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0%" stop-color="#1f2433"/>
@@ -10,6 +10,7 @@
     <circle cx="330" cy="70" r="46"/>
     <circle cx="330" cy="70" r="74"/>
   </g>
+  <text x="40" y="76" fill="#27ae60" font-family="Poppins, Verdana, sans-serif" font-size="13" font-weight="600" letter-spacing="2">AMIGOS DO BEM</text>
   <rect x="40" y="96" width="56" height="4" rx="2" fill="#27ae60"/>
   <text x="40" y="150" fill="#ffffff" font-family="Poppins, Verdana, sans-serif" font-size="27" font-weight="700">Gestão de</text>
   <text x="40" y="186" fill="#ffffff" font-family="Poppins, Verdana, sans-serif" font-size="27" font-weight="700">Projetos Sociais</text>

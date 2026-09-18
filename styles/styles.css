@@ -1025,4 +1025,14 @@ section {
   font-size: 0.9rem;
 }
 
+.hover-items .port-org {
+  color: var(--color-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  opacity: 0.85;
+  margin-bottom: 0.5rem;
+}
+
 /*# sourceMappingURL=styles.css.map */
